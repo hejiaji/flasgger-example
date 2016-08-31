@@ -1,0 +1,27 @@
+This is the add function
+---
+tags:
+  - calculator
+parameters:
+  - name: json
+    in: body
+    required: true
+    type: string
+    description: 'example: {"first":1,"second":2}'
+    scheme:
+      id: Selections
+      required:
+        - first
+        - second
+      properties:
+        first:
+          type: number
+          description: the first number
+          default: []
+        second:
+          type: number
+          description: the second number
+          default: []
+responses:
+  200:
+    description: Calculated result
